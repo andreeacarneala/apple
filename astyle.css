@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: white;
+    font-family: Arial, sans-serif;
+    padding: 60px;
+
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.card{
+    width: 300px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+    margin: 30px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+.card-content{
+    padding: 20px;
+}
+.card-content h3{
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.card-content p{
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.aboutAds{
+    font-size: 48px;
+        line-height: 1;
+        font-weight: 700;
+        letter-spacing: -0.003em;
+        font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+        color: black;
+        text-align: center;
+}
+
+.device-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color : black;
+    text-align: center;
+    margin-bottom: -50px;
+  
+}
+
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+
+}
+
+.icon-music{
+  text-align: center;
+  margin: 10px ;
+  top: 50%;
+  padding: 10px;
+}
+.icon-music p{
+    margin: 10px;
+    font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.dmusic{
+    font-size: 40px;
+    font-weight: 700;
+    margin-top: 10px;
+    color: #000;
+    font-family: SF Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+/* Media Queries pentru ecrane mai mici */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .aboutAds {
+        font-size: 36px;
+    }
+
+    .device-container {
+        flex-direction: column;
+    }
+
+    footer {
+        position: relative;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-content h3 {
+        font-size: 20px;
+    }
+
+    .card-content p {
+        font-size: 14px;
+    }
+
+    .aboutAds {
+        font-size: 28px;
+    }
+}
